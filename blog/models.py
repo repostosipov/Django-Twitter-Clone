@@ -3,8 +3,6 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
 
-
-
 class Post(models.Model):
     content = models.TextField(max_length=1000)
     date_posted = models.DateTimeField(default=timezone.now)
